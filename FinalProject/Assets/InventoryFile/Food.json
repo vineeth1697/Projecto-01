@@ -1,0 +1,23 @@
+{
+	"Name": "Food",
+	"InventoryTypes": [{
+			"Name": "Wheat",
+			"Durability": 6,
+			"Period": "Months",
+			"ResaleValue": 100
+		},
+		{
+			"Name": "Noodles",
+			"Durability": 12,
+			"Period": "Months",
+			"ResaleValue": 55
+		},
+		{
+			"Name": "Rice",
+			"Durability": 6,
+			"Period": "Months",
+			"ResaleValue": 300
+		}
+	],
+	"Image": ""
+}
