@@ -2,7 +2,7 @@
 	"Name": "Weapons",
 	"InventoryTypes": [{
 			"Name": "MachineGun",
-			"Durability": 5,
+			"Durability": 6,
 			"Period": "Years",
 			"ResaleValue": "1000"
 		},
