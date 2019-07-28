@@ -1,0 +1,23 @@
+{
+	"Name": "Weapons",
+	"InventoryTypes": [{
+			"Name": "MachineGun",
+			"Durability": 5,
+			"Period": "Years",
+			"ResaleValue": "1000"
+		},
+		{
+			"Name": "Pistol",
+			"Durability": 2,
+			"Period": "Years",
+			"ResaleValue": 800
+		},
+		{
+			"Name": "Knife",
+			"Durability": 8,
+			"Period": "Years",
+			"ResaleValue": 500
+		}
+	],
+	"Image": ""
+}

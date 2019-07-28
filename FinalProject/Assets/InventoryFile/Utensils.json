@@ -1,0 +1,23 @@
+{
+	"Name": "Utensils",
+	"InventoryTypes": [{
+			"Name": "Heater",
+			"Durability": 12,
+			"Period": "Months",
+			"ResaleValue": 450
+		},
+		{
+			"Name": "Plates",
+			"Durability": 6,
+			"Period": "Months",
+			"ResaleValue": 200
+		},
+		{
+			"Name": "Bowls",
+			"Durability": 8,
+			"Period": "Months",
+			"ResaleValue": 100
+		}
+	],
+	"Image": ""
+}

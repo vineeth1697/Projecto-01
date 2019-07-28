@@ -2,46 +2,38 @@
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft.Json;
+using UnityEngine.UI;
+
 
 public class DataController : MonoBehaviour
 {
+    public Text CopyText;
     // Start is called before the first frame update
+    private string[] files;
     void Start()
     {
-               
-        string pathToFIle = Application.dataPath + "/InventoryFile/Food.json";
-        string text = File.ReadAllText(pathToFIle);
+        string FilePath = Application.dataPath + "/InventoryFile/Weapons.json";
 
-         Inventory food = JsonUtility.FromJson<Inventory>(text);
+        string WeaponText=File.ReadAllText(FilePath);
+        Inventory weapon = JsonUtility.FromJson<Inventory>(WeaponText);
+       // CopyText.text = weapon.Name;
 
-        //InventoryTest food = JsonConvert.DeserializeObject<InventoryTest>(text);
-
-        Debug.Log(text);
-
-        Debug.Log(food.Name);
-
-        foreach(InventoryTypes type in food.InventoryTypes)
+        foreach(InventoryTypes types in weapon.InventoryTypes)
         {
-            Debug.Log(type.Name + "===" + type.Durability + "==" + type.ResaleValue);
+           string InventoryName= types.Name;
+            int InventaryDurability = types.Durability;
+            int InventoryResaleValue = types.ResaleValue;
+
+            CopyText.text = "Name:" + types.Name + "\n Durability:" + types.Durability + "\n ResaleValue:" + types.ResaleValue;
+                
         }
-
-
-
-
-   
-    }
-
-    public class InventoryTest
-    {
-        public string Name { get; set; }
-        List<InventoryTypes> InventoryTypes { get; set; }
-        public string Image { get; set; }
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         
+
     }
 }

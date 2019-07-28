@@ -8,4 +8,5 @@ public class Inventory
     public string Name;
    public List<InventoryTypes> InventoryTypes;
     public string Image;
+    public string State;
 }

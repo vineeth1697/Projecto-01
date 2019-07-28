@@ -1,0 +1,23 @@
+{
+	"Name": "Clothing",
+	"InventoryTypes": [{
+			"Name": "Shirt",
+			"Durability": 6,
+			"Period": "Months",
+			"ResaleValue": 200
+		},
+		{
+			"Name": "Pants",
+			"Durability": 11,
+			"Period": "Months",
+			"ResaleValue": 300
+		},
+		{
+			"Name": "Jacket",
+			"Durability": 12,
+			"Period": "Months",
+			"ResaleValue": 450
+		}
+	],
+	"Image": ""
+}
