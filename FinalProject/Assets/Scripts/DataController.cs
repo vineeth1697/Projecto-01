@@ -58,10 +58,10 @@ public class DataController : MonoBehaviour
     {
        
         FilePath = Application.dataPath + "/InventoryFile/"+fileName;
-        string WeaponText = File.ReadAllText(FilePath);
-        Inventory weapon = JsonUtility.FromJson<Inventory>(WeaponText);
+        string jsontext = File.ReadAllText(FilePath);
+        Inventory json = JsonUtility.FromJson<Inventory>(jsontext);
         // CopyText.text = weapon.Name;
-        foreach (InventoryTypes types in weapon.InventoryTypes)
+        foreach (InventoryTypes types in json.InventoryTypes)
         {
             string InventoryName = types.Name;
             int InventaryDurability = types.Durability;
